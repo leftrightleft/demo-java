@@ -12,7 +12,7 @@ This tutorial with use CodeQL Analysis with Code Scanning in order to search for
 
 ## Instructions
 
-<details>
+<details> 
 <summary>Create repository fork</summary>
 <p> 
   
