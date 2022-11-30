@@ -27,7 +27,7 @@ Where creating the forked repository, make sure to
 3. Disable main branch only cloning
 4. Create the repository from the template
 
-</p>
+</p>sd
 </details>
 
 <details>f
