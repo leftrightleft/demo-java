@@ -30,7 +30,7 @@ Where creating the forked repository, make sure to
 </p>
 </details>
 
-<details>
+<details>f
 <summary>Enable Code Scanning</summary>
 <p> 
 
