@@ -21,7 +21,7 @@ jobs:
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
           endpoint: ${{ github.event.repository.languages_url }}
-          excluded-languages: 'python,java,x'
+          excluded-languages: 'java,x'
           
   analyze:
     needs: create-matrix
