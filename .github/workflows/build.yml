@@ -11,6 +11,7 @@ on:
 jobs:
   build:
     name: build
+    # This will be your self-hosted runner tag
     runs-on: 'ubuntu-latest'
     permissions:
       actions: read
