@@ -1,0 +1,27 @@
+name: "Just plain ol build"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+
+
+jobs:
+  build:
+    name: build
+    runs-on: 'ubuntu-latest'
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - run: |
+        mvn -B clean compile -DskipTests 
+
+   
