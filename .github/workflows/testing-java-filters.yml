@@ -42,10 +42,10 @@ jobs:
       contents: read
       security-events: write
 
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'java' ]
+    # strategy:
+    #   fail-fast: false
+    #   matrix:
+    #     language: [ 'java' ]
 
     steps:
     - name: Checkout repository
@@ -59,7 +59,7 @@ jobs:
       with:
         # buildless: URL of CodeQL bundle pre-release from: https://github.com/dsp-testing/codeql-cli-nightlies/releases        
         #tools: https://github.com/dsp-testing/codeql-cli-nightlies/releases/download/codeql-bundle-20231017/codeql-bundle-linux64.tar.gz
-        languages: ${{ matrix.language }}
+        languages: 'java-kotlin'
         queries: security-extended
         # config-file: ./.github/codeql/config.yml
         
